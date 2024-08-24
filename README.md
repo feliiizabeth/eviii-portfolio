@@ -41,7 +41,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Credits
 - This portfolio was built while referencing this [tutorial](https://youtu.be/Kb1f5bvF6f4?feature=shared).
-- Images that I do not own are credited in the image-credits.md file..
+- Images that I do not own are credited in the [image-credits.md](./public/images/image-credits.md) file..
 
 ---
 
