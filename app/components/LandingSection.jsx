@@ -2,6 +2,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 
 export const LandingSection = () => {
   const [isAnimating, setIsAnimating] = useState(false); // For Type Animation
@@ -34,8 +35,13 @@ export const LandingSection = () => {
     <section className="lg:py-16">
       {/* Grid container */}
       <div className="grid grid-cols-1 sm:grid-cols-12">
-        {/* Text container */}
-        <div className="col-span-8 place-self-center text-center sm:text-left justify-self-start">
+        {/* Animated text container */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
+        >
           {/* Introduction heading */}
           <h1
             ref={textContainerRef}
@@ -81,10 +87,15 @@ export const LandingSection = () => {
               </span>
             </button>
           </div>
-        </div>
+        </motion.div>
 
-        {/* Responsive image container */}
-        <div className="col-span-4 place-self-center mt-4 lg:mt-0">
+        {/* Animated, responsive image container */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="col-span-4 place-self-center mt-4 lg:mt-0"
+        >
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
               src="/images/landing-image.png"
@@ -94,7 +105,7 @@ export const LandingSection = () => {
               height={300}
             />
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
