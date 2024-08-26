@@ -1,6 +1,8 @@
 "use client";
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
+
+import Skill from "./Skill";
 import TabButton from "./TabButton";
 
 // Skills and education information
@@ -9,27 +11,27 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-none pl-2">
-        <li>Python</li>
-        <li>JavaScript</li>
-        <li>Java</li>
-        <li>C</li>
-        <li>C++</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>jQuery</li>
-        <li>Bootstrap</li>
-        <li>React</li>
-        <li>SQL</li>
-      </ul>
+      <div className="flex flex-wrap gap-4">
+        <Skill name="Python" />
+        <Skill name="JavaScript" />
+        <Skill name="Java" />
+        <Skill name="C" />
+        <Skill name="C++" />
+        <Skill name="HTML" />
+        <Skill name="CSS" />
+        <Skill name="jQuery" />
+        <Skill name="Bootstrap" />
+        <Skill name="React" />
+        <Skill name="SQL" />
+      </div>
     ),
   },
   {
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-none pl-2">
-        <li>
+      <div className="pl-2">
+        <p>
           <span className="font-semibold">
             New York University Tandon School of Engineering
           </span>
@@ -37,8 +39,8 @@ const TAB_DATA = [
           <br />
           Bachelor of Science, Major in Computer Science, Minor in Integrated
           Design & Media.
-        </li>
-      </ul>
+        </p>
+      </div>
     ),
   },
 ];
@@ -97,7 +99,7 @@ const AboutSection = () => {
           </div>
 
           {/* Display tab content appropriately */}
-          <div className="mt-8">
+          <div className="mt-8 flex flex-wrap gap-4">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>

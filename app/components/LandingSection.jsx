@@ -17,7 +17,7 @@ export const LandingSection = () => {
       }
     );
 
-    // If tectContainerRef is assigned a DOM element, observe the element for visibility changes
+    // If textContainerRef is assigned a DOM element, observe the element for visibility changes
     if (textContainerRef.current) {
       observer.observe(textContainerRef.current);
     }
@@ -66,7 +66,7 @@ export const LandingSection = () => {
           </h1>
 
           {/* Responsive introduction paragraph */}
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl sm:pr-10">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
 
