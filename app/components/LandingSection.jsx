@@ -1,9 +1,35 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 
 export const LandingSection = () => {
+  const [isAnimating, setIsAnimating] = useState(false); // For Type Animation
+  const textContainerRef = useRef(null); // <h1> that contains the typing animation
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsAnimating(entry.isIntersecting); // Animation state based on visibility
+      },
+      {
+        threshold: 0.1, // Start when 10% of container is in view
+      }
+    );
+
+    // If tectContainerRef is assigned a DOM element, observe the element for visibility changes
+    if (textContainerRef.current) {
+      observer.observe(textContainerRef.current);
+    }
+
+    // Have observer stop observing the element (prevents memory leaks)
+    return () => {
+      if (textContainerRef.current) {
+        observer.unobserve(textContainerRef.current);
+      }
+    };
+  }, []);
+
   return (
     <section className="lg:py-16">
       {/* Grid container */}
@@ -11,24 +37,32 @@ export const LandingSection = () => {
         {/* Text container */}
         <div className="col-span-8 place-self-center text-center sm:text-left justify-self-start">
           {/* Introduction heading */}
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-7xl lg:leading-normal font-extrabold">
+          <h1
+            ref={textContainerRef}
+            className="text-white mb-4 text-4xl sm:text-5xl lg:text-7xl lg:leading-normal font-extrabold"
+          >
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
               Hello, I'm{" "}
             </span>
             <br />
-            <TypeAnimation
-              sequence={[
-                "Elizabeth",
-                1000, // wait 1s
-                "a Problem Solver",
-                1000,
-                "a Creative Coder",
-                1000,
-              ]}
-              wrapper="span"
-              speed={50}
-              repeat={Infinity}
-            />
+            {isAnimating && (
+              <TypeAnimation
+                sequence={[
+                  "Elizabeth",
+                  1000, // wait 1s
+                  "a Problem Solver",
+                  1000,
+                  "a Creative Coder",
+                  1000,
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+                cursor={true}
+                omitDeletionAnimation={true} // Prevent text jumping when out of view
+                shouldForwardProps={() => isAnimating} // Animate when in view only
+              />
+            )}
           </h1>
 
           {/* Responsive introduction paragraph */}
