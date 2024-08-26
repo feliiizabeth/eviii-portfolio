@@ -1,4 +1,13 @@
 /** @type {import('tailwindcss').Config} */
+let colors = require('tailwindcss/colors');
+
+// Remove old colors to prevent benign warnings
+delete colors.lightBlue;
+delete colors.warmGray;
+delete colors.trueGray;
+delete colors.coolGray;
+delete colors.blueGray;
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,6 +21,11 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+    },
+    colors: {
+      ...colors,
+      primary: colors.purple,
+      secondary: colors.pink,
     },
   },
   plugins: [],
