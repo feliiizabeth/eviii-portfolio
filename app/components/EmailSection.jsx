@@ -41,13 +41,16 @@ const EmailSection = () => {
   };
 
   return (
-    <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
+    <section
+      id="contact"
+      className="grid md:grid-cols-2 mb-12 md:mb-12 pt-22 sm:pt-23 lg:pt-28 pb-24 gap-4 relative"
+    >
       {/* Blurry circle */}
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
 
       {/* Contact content container */}
       <div className="z-5">
-        <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
+        <h5 className="text-xl font-bold text-white mb-2">Let's Connect</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce massa
           risus, eleifend et augue et, hendrerit scelerisque mi. Fusce vitae

@@ -72,7 +72,9 @@ const NavBar = () => {
       </div>
 
       {/* Display mobile nav menu appropriately */}
-      {navBarOpen ? <MenuOverlay links={navLinks} /> : null}
+      {navBarOpen ? (
+        <MenuOverlay links={navLinks} setNavBarOpen={setNavBarOpen} />
+      ) : null}
     </nav>
   );
 };
