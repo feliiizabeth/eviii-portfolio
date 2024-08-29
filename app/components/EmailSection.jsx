@@ -52,10 +52,7 @@ const EmailSection = () => {
       <div className="z-5">
         <h5 className="text-xl font-bold text-white mb-2">Let's Connect</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce massa
-          risus, eleifend et augue et, hendrerit scelerisque mi. Fusce vitae
-          nunc sem. Curabitur dui libero, convallis sit amet maximus in, blandit
-          quis quam.
+        Feel free to reach out if you'd like to chat about potential projects, collaborations, job opportunities, or just to connect! I'm always excited to explore new opportunities and share ideas. I look forward to hearing from you!
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/ev2070">
@@ -80,7 +77,7 @@ const EmailSection = () => {
               id="email"
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="johndoe@gmail.com"
+              placeholder="example@gmail.com"
             />
           </div>
           <div className="mb-6">
@@ -96,7 +93,7 @@ const EmailSection = () => {
               id="subject"
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="Just saying hi"
+              placeholder="Reaching out for..."
             />
           </div>
           <div className="mb-6">

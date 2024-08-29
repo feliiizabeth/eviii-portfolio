@@ -40,7 +40,7 @@ export const LandingSection = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
+          className="col-span-8 place-self-center text-center sm:text-left sm:justify-self-start justify-self-center"
         >
           {/* Introduction heading */}
           <h1
@@ -73,15 +73,15 @@ export const LandingSection = () => {
 
           {/* Responsive introduction paragraph */}
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl sm:pr-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Welcome to the EVIII PORTFOLIO
           </p>
 
           {/* Buttons container */}
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white">
+            <button className="px-6 py-3 w-72 sm:w-fit rounded-full sm:mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white">
               Hire Me
             </button>
-            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3">
+            <button className="px-1 py-1 w-72 sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3">
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download DV
               </span>

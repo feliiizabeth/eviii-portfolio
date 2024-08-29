@@ -31,14 +31,17 @@ const TAB_DATA = [
     id: "education",
     content: (
       <div className="pl-2">
-        <p>
-          <span className="font-semibold">
+        <p className="text-lg leading-relaxed">
+          <span className="font-semibold text-xl">
             New York University Tandon School of Engineering
           </span>
-          , Brooklyn, New York.
           <br />
-          Bachelor of Science, Major in Computer Science, Minor in Integrated
-          Design & Media.
+          <span className="text-sm text-[#ADB7BE]">Brooklyn, NY</span>
+          <br />
+          <span className="mt-2">
+            Bachelor of Science, Major in Computer Science, Minor in Integrated
+            Design & Media
+          </span>
         </p>
       </div>
     ),
@@ -59,25 +62,54 @@ const AboutSection = () => {
   return (
     <section id="about" className="text-white">
       <div className="md:grid md:grid-cols-2 gap-8 items-center pt-22 sm:pt-23 lg:pt-25 pb-8 px-4 xl-gap-16 sm:pb-16 xl:px-16">
-        <Image
-          src="/images/about-image.jpg"
-          alt="About image"
-          width={500}
-          height={500}
-        />
+        <div>
+          <Image
+            src="/images/about-image.jpg"
+            alt="About image"
+            width={500}
+            height={500}
+          />
+          <br />
+          <Image
+            src="/images/landing-image.png"
+            alt="About image"
+            width={500}
+            height={500}
+          />
+        </div>
 
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
 
           {/* About Me description */}
           <p className="text-base lg:text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Hi, there! I'm a recent graduate of NYU Tandon with a degree in
+            Computer Science and a minor in Integrated Design & Media. My
+            passion for technology started early, despite having limited access
+            to it growing up. That all changed when I joined a Software
+            Engineering Program in high school, where I discovered the thrill of
+            turning ideas into functional and creative projects. From that
+            moment, I knew I wanted a career that combines technical skills with
+            creative expression.
+            <br />
+            <br />
+            In my portfolio, you'll find a variety of projects—websites, graphic
+            designs, games, and more. I love bringing a fresh, artistic
+            perspective to my work and exploring different programming languages
+            and tools. My approach is rooted in clear communication,
+            collaboration, and breaking tasks down into manageable chunks, all
+            while following industry best practices.
+            <br />
+            <br />
+            As a first-generation Mexican-American from Brooklyn, I'm proud of
+            my humble beginnings and bring that determination into every
+            project. Beyond coding and design, I’m an avid artist, often
+            blending my love for drawing with my technical work.
+            <br />
+            <br />
+            I'm eager to explore new opportunities in the tech world and always
+            open to collaborations that push me to grow. If my story resonates
+            with you, let’s connect and create something amazing together!
           </p>
 
           {/* Switchable tab buttons */}
