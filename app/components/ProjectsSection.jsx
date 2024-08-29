@@ -77,7 +77,7 @@ const ProjectsSection = () => {
       </h2>
 
       {/* Tag buttons */}
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      <div className="text-white flex flex-row justify-center items-center gap-2 pb-6 lg:pb-8">
         <ProjectTag
           onClick={handleTagChange}
           tag="All"
