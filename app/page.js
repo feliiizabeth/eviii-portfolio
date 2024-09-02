@@ -12,7 +12,7 @@ export default function Home() {
       <NavBar />
 
       {/* Page content container */}
-      <div className="container mt-24 mx-auto px-12 py-4">
+      <div className="container mt-24 mx-auto px-8 sm:px-12 py-4">
         <LandingSection />
         <AboutSection />
         <ProjectsSection />

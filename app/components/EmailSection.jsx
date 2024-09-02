@@ -52,7 +52,10 @@ const EmailSection = () => {
       <div className="z-5">
         <h5 className="text-xl font-bold text-white mb-2">Let's Connect</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
-        Feel free to reach out if you'd like to chat about potential projects, collaborations, job opportunities, or just to connect! I'm always excited to explore new opportunities and share ideas. I look forward to hearing from you!
+          Feel free to reach out if you'd like to chat about potential projects,
+          collaborations, job opportunities, or just to connect! I'm always
+          excited to explore new opportunities and share ideas. I look forward
+          to hearing from you!
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/ev2070">
