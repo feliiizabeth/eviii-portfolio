@@ -64,17 +64,11 @@ const AboutSection = () => {
       <div className="md:grid md:grid-cols-2 gap-8 items-center pt-22 sm:pt-23 lg:pt-25 pb-8 px-4 xl-gap-16 sm:pb-16 xl:px-16">
         <div>
           <Image
-            src="/images/about-image.jpg"
-            alt="About image"
-            width={500}
-            height={500}
-          />
-          <br />
-          <Image
-            src="/images/landing-image.png"
-            alt="About image"
-            width={500}
-            height={500}
+            src="/images/pattern.jpg"
+            alt="Design pattern image"
+            className="rounded-t-[96px] rounded-b-[96px]"
+            width={512}
+            height={1024}
           />
         </div>
 
