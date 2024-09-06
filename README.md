@@ -40,6 +40,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 ## Credits
+
 - This portfolio was built while referencing [NextJs Portfolio Tutorial - Build a Responsive Portfolio Website w/ Advanced Animations (2023)](https://youtu.be/Kb1f5bvF6f4?feature=shared), a YouTube tutorial by [webdecoded](https://www.youtube.com/@webdecoded).
 - The API endpoint to send an email was built while referencing [Send Email With NextJS Using Gmail, Resend or AWS](https://youtu.be/oujAYWgYwtM?si=7-cLRc7CA7a1hlzW), a YouTube tutorial by [ZinoTrust Academy](https://www.youtube.com/@ZinoTrustAcademy).
 - Images that I do not own are credited in the [image-credits.md](./public/images/image-credits.md) file.
