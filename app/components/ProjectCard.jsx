@@ -8,8 +8,8 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
     <div>
       {/* Project image container */}
       <div
-        className="h-52 md:h-72 rounded-t-xl relative group"
-        style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
+        className="h-52 md:h-72 rounded-t-xl bg-cover bg-center bg-no-repeat relative group"
+        style={{ backgroundImage: `url(${imgUrl})` }}
       >
         {/* Overlay container */}
         <div className="overlay flex items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 group-hover:bg-opacity-80 transition-all duration-500">

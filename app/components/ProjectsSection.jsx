@@ -6,47 +6,60 @@ import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
 // Project tags
-const tags = ["All", "Websites", "Games", "Creative Coding", "Graphic Designs", "Research", "Full Stack Development"];
+const tags = [
+  "All",
+  "Websites",
+  "Games",
+  "Creative Coding",
+  "Graphic Designs",
+  "Research",
+  "Full Stack Development",
+];
 
 // Projects' information
 const ProjectsData = [
   {
-    id: 1,
-    title: "TITLE 1",
+    title: "sueño - Logo",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "/images/landing-image.png",
-    tag: ["All", "Web"],
+      "Designed a logo for an imagined brand in Adobe Illustrator, exploring multiple iterations through hand sketches and digital refinements. Developed and refined logo concepts using vector graphics to establish a unique visual identity.",
+    image: "/images/sueno.png",
+    tag: ["All", "Graphic Designs"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
-    id: 2,
-    title: "TITLE 2",
+    title: "Sunshine Deli - Menu",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "/images/about-image.jpg",
-    tag: ["All", "Web"],
+      "Created a detailed deli menu in InDesign and Figma, blending typography, strategic layout, and rich imagery for both print and digital formats. Emphasized clear hierarchy and user experience to create an appealing and functional menu.",
+    image: "/images/sunshine-deli.png",
+    tag: ["All", "Graphic Designs"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
-    id: 3,
-    title: "TITLE 3",
+    title: "The Bosch Bird - Image Trace",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "/images/landing-image.png",
-    tag: ["All", "Web"],
+      "Reimagined Hieronymous Bosch's The Garden of Earthly Delights using vector art in Illustrator and advanced image manipulation in Photoshop, focusing on composition and creative techniques.",
+    image: "/images/the-bosch-bird.png",
+    tag: ["All", "Graphic Designs"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
-    id: 4,
-    title: "TITLE 4",
+    title: "Serene Confections - Graphic Treatment",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "/images/about-image.jpg",
-    tag: ["All", "Games"],
+      "Created a graphic treatment document in InDesign, showcasing personal style through custom colors, typography, and textures, and utilizing grids for layout and visual exploration.",
+    image: "/images/serene-confections.png",
+    tag: ["All", "Graphic Designs"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    title: "We Are the Champions - Text Texture",
+    description:
+      "Explored typography and grid layouts in Adobe InDesign by creating a black-and-white composition using five typefaces and varying text attributes to experiment with texture and alignment.",
+    image: "/images/we-are-the-champions.png",
+    tag: ["All", "Graphic Designs"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -81,7 +94,6 @@ const ProjectsSection = () => {
 
       {/* Tag buttons */}
       <div className="text-white flex flex-row flex-wrap justify-center items-center gap-2 pb-6 lg:pb-8">
-      
         {tags.map((tagName) => (
           <ProjectTag
             key={tagName}
@@ -104,11 +116,11 @@ const ProjectsSection = () => {
             transition={{ duratoin: 0.3, delay: index * 0.4 }}
           >
             <ProjectCard
-              key={project.id}
+              key={project.title}
               title={project.title}
               description={project.description}
               imgUrl={project.image}
-              tas={project.tag}
+              tag={project.tag}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
             />
