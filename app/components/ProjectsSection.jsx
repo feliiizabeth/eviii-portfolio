@@ -1,9 +1,10 @@
 "use client";
 import React, { useState, useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
-import { motion, useInView } from "framer-motion";
+import { ProjectsData } from "../data/projectsData";
 
 // Project tags
 const tags = [
@@ -14,55 +15,6 @@ const tags = [
   "Graphic Designs",
   "Research",
   "Full Stack Development",
-];
-
-// Projects' information
-const ProjectsData = [
-  {
-    title: "sueño - Logo",
-    description:
-      "Designed a logo for an imagined brand in Adobe Illustrator, exploring multiple iterations through hand sketches and digital refinements. Developed and refined logo concepts using vector graphics to establish a unique visual identity.",
-    image: "/images/sueno.png",
-    tag: ["All", "Graphic Designs"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    title: "Sunshine Deli - Menu",
-    description:
-      "Created a detailed deli menu in InDesign and Figma, blending typography, strategic layout, and rich imagery for both print and digital formats. Emphasized clear hierarchy and user experience to create an appealing and functional menu.",
-    image: "/images/sunshine-deli.png",
-    tag: ["All", "Graphic Designs"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    title: "The Bosch Bird - Image Trace",
-    description:
-      "Reimagined Hieronymous Bosch's The Garden of Earthly Delights using vector art in Illustrator and advanced image manipulation in Photoshop, focusing on composition and creative techniques.",
-    image: "/images/the-bosch-bird.png",
-    tag: ["All", "Graphic Designs"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    title: "Serene Confections - Graphic Treatment",
-    description:
-      "Created a graphic treatment document in InDesign, showcasing personal style through custom colors, typography, and textures, and utilizing grids for layout and visual exploration.",
-    image: "/images/serene-confections.png",
-    tag: ["All", "Graphic Designs"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    title: "We Are the Champions - Text Texture",
-    description:
-      "Explored typography and grid layouts in Adobe InDesign by creating a black-and-white composition using five typefaces and varying text attributes to experiment with texture and alignment.",
-    image: "/images/we-are-the-champions.png",
-    tag: ["All", "Graphic Designs"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
 ];
 
 const ProjectsSection = () => {
