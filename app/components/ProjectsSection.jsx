@@ -5,6 +5,9 @@ import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
+// Project tags
+const tags = ["All", "Websites", "Games", "Creative Coding", "Graphic Designs", "Research", "Full Stack Development"];
+
 // Projects' information
 const ProjectsData = [
   {
@@ -77,22 +80,16 @@ const ProjectsSection = () => {
       </h2>
 
       {/* Tag buttons */}
-      <div className="text-white flex flex-row justify-center items-center gap-2 pb-6 lg:pb-8">
-        <ProjectTag
-          onClick={handleTagChange}
-          tag="All"
-          isSelected={tag === "All"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          tag="Web"
-          isSelected={tag === "Web"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          tag="Games"
-          isSelected={tag === "Games"}
-        />
+      <div className="text-white flex flex-row flex-wrap justify-center items-center gap-2 pb-6 lg:pb-8">
+      
+        {tags.map((tagName) => (
+          <ProjectTag
+            key={tagName}
+            onClick={handleTagChange}
+            tag={tagName}
+            isSelected={tag === tagName}
+          />
+        ))}
       </div>
 
       {/* Display projects corresponding to selected tag */}
