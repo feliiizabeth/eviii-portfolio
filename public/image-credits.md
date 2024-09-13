@@ -15,6 +15,7 @@ I DO NOT own these images. These images belong to their respective owners.
 
 ## Projects Section
 
+- [**Computer Mockups**](https://www.freepik.com/mockup-generator)
 - [**the-bosch-bird.png**](https://archief.ntr.nl/tuinderlusten/en.html#)
 
 ## Icons
