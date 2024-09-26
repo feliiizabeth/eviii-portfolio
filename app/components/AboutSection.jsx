@@ -23,6 +23,7 @@ const TAB_DATA = [
         <Skill name="Bootstrap" />
         <Skill name="React" />
         <Skill name="SQL" />
+        <Skill name="Game Maker Language" />
       </div>
     ),
   },

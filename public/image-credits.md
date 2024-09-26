@@ -21,6 +21,7 @@ I DO NOT own these images. These images belong to their respective owners.
 ## Icons
 
 - [**Github Invertocat Logo**](https://github.com/logos)
+- [**Itch.io Textless White Logo**](https://itch.io/press-kit)
 
 ---
 

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import GitHubIcon from "../../public/images/github-mark-white.svg";
+import ItchioIcon from "../../public/images/itchio-textless-white.svg";
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -60,6 +61,9 @@ const EmailSection = () => {
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/ev2070">
             <Image src={GitHubIcon} alt="GitHub Icon" className="w-12 h-12" />
+          </Link>
+          <Link href="https://ev2070.itch.io/">
+            <Image src={ItchioIcon} alt="Itchio Icon" className="w-12 h-12" />
           </Link>
         </div>
       </div>
