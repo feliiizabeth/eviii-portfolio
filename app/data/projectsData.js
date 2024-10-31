@@ -30,7 +30,25 @@ export const ProjectsData = [
     previewUrl: "/",
   },
 
-  // Creative Coding
+  // Games
+  {
+    title: "Zorrotron: 1919",
+    description:
+      "Zorrotron: 1919 is a reimagining of the \"Robotron: 2084\" arcade game, built with GameMaker Studio 2. Step into the boots of Zorro, the masked vigilante, as you combat tyranny and defend the townsfolk while navigating obstacles.",
+    image: "/images/project_cards/zorrotron-1919-banner.png",
+    tag: ["All", "Games"],
+    gitUrl: "https://github.com/ev2070/Zorrotron-1919",
+    previewUrl: "/",
+  },
+  {
+    title: "Nutcase for Acorns",
+    description:
+      "A platformer game built in GameMaker Studio 2, where players help Scrat, the acorn-obsessed saber-toothed squirrel from the Ice Age franchise, navigate icy terrains in search of his elusive acorn.",
+    image: "/images/project_cards/nutcase-for-acorns-banner.png",
+    tag: ["All", "Games"],
+    gitUrl: "https://github.com/ev2070/NutcaseForAcorns",
+    previewUrl: "/",
+  },
   {
     title: "Wanted! - Game Clone",
     description:
@@ -40,8 +58,28 @@ export const ProjectsData = [
     gitUrl: "/",
     previewUrl: "/",
   },
+
+  // Creative Coding
   {
-    title: "Lofi Commuter - Interactive Toy",
+    title: "Petal Palettes - Interactive Tool",
+    description:
+      "An interactive experience, made with GameMaker Studio 2, where you can explore and create beautiful color palettes inspired by the beauty of nature. RGB and hex codes are displayed for easy reference.",
+    image: "/images/project_cards/petal-palettes.png",
+    tag: ["All", "Creative Coding"],
+    gitUrl: "https://github.com/ev2070/PetalPalettes",
+    previewUrl: "/",
+  },
+  {
+    title: "Glass Gleam - Interactive Digital Toy",
+    description:
+      "Glass Gleam is an interactive digital toy built in GameMaker Studio 2. In this experience, you'll take on the simple yet satisfying task of cleaning a pair of glasses.",
+    image: "/images/project_cards/glass-gleam-banner.png",
+    tag: ["All", "Creative Coding"],
+    gitUrl: "https://github.com/ev2070/GlassGleam",
+    previewUrl: "/",
+  },
+  {
+    title: "Lofi Commuter - Interactive Digital Toy",
     description:
       "Developed an interactive p5.js toy inspired by retro animations and lofi music, featuring a character commuting through a lively cityscape. Combined custom functions, transformations, and audio for an engaging experience.",
     image: "/images/project_cards/lofi-commuter.png",
@@ -50,7 +88,7 @@ export const ProjectsData = [
     previewUrl: "/",
   },
   {
-    title: "Mood Ring - Interactive Toy",
+    title: "Mood Ring - Interactive Digital Toy",
     description:
       "Created an interactive mood ring simulation using p5.js that features dynamic color changes and animations based on user interaction. Integrated responsive mood meanings and visual effects, all encapsulated within a custom-designed ring graphic.",
     image: "/images/project_cards/mood-ring.png",
@@ -59,7 +97,7 @@ export const ProjectsData = [
     previewUrl: "/",
   },
   {
-    title: "Sunset Shifts - Interactive Toy",
+    title: "Sunset Shifts - Interactive Digital Toy",
     description:
       "Developed an interactive landscape in p5.js, featuring dynamic color changes. Allowed users to change the scene of mountains and sky by pressing the spacebar, adding randomness to the visual experience.",
     image: "/images/project_cards/sunset-shifts.png",
