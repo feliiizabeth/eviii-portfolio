@@ -34,7 +34,7 @@ export const ProjectsData = [
   {
     title: "Zorrotron: 1919",
     description:
-      "Zorrotron: 1919 is a reimagining of the \"Robotron: 2084\" arcade game, built with GameMaker Studio 2. Step into the boots of Zorro, the masked vigilante, as you combat tyranny and defend the townsfolk while navigating obstacles.",
+      'Zorrotron: 1919 is a reimagining of the "Robotron: 2084" arcade game, built with GameMaker Studio 2. Step into the boots of Zorro, the masked vigilante, as you combat tyranny and defend the townsfolk while navigating obstacles.',
     image: "/images/project_cards/zorrotron-1919-banner.png",
     tag: ["All", "Games"],
     gitUrl: "https://github.com/ev2070/Zorrotron-1919",
@@ -76,33 +76,6 @@ export const ProjectsData = [
     image: "/images/project_cards/glass-gleam-banner.png",
     tag: ["All", "Creative Coding"],
     gitUrl: "https://github.com/ev2070/GlassGleam",
-    previewUrl: "/",
-  },
-  {
-    title: "Lofi Commuter - Interactive Digital Toy",
-    description:
-      "Developed an interactive p5.js toy inspired by retro animations and lofi music, featuring a character commuting through a lively cityscape. Combined custom functions, transformations, and audio for an engaging experience.",
-    image: "/images/project_cards/lofi-commuter.png",
-    tag: ["All", "Creative Coding"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    title: "Mood Ring - Interactive Digital Toy",
-    description:
-      "Created an interactive mood ring simulation using p5.js that features dynamic color changes and animations based on user interaction. Integrated responsive mood meanings and visual effects, all encapsulated within a custom-designed ring graphic.",
-    image: "/images/project_cards/mood-ring.png",
-    tag: ["All", "Creative Coding"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    title: "Sunset Shifts - Interactive Digital Toy",
-    description:
-      "Developed an interactive landscape in p5.js, featuring dynamic color changes. Allowed users to change the scene of mountains and sky by pressing the spacebar, adding randomness to the visual experience.",
-    image: "/images/project_cards/sunset-shifts.png",
-    tag: ["All", "Creative Coding"],
-    gitUrl: "/",
     previewUrl: "/",
   },
 
