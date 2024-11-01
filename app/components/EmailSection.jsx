@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
 import GitHubIcon from "../../public/images/github-mark-white.svg";
 import ItchioIcon from "../../public/images/itchio-textless-white.svg";
+import LinkedInIcon from "../../public/images/In-White-96.png";
+import SocialLink from "./SocialLink";
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -59,12 +59,21 @@ const EmailSection = () => {
           to hearing from you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/ev2070">
-            <Image src={GitHubIcon} alt="GitHub Icon" className="w-12 h-12" />
-          </Link>
-          <Link href="https://ev2070.itch.io/">
-            <Image src={ItchioIcon} alt="Itchio Icon" className="w-12 h-12" />
-          </Link>
+          <SocialLink
+            href="https://github.com/ev2070"
+            src={GitHubIcon}
+            alt="GitHub Icon"
+          />
+          <SocialLink
+            href="https://www.linkedin.com/in/ev2070/"
+            src={LinkedInIcon}
+            alt="LinkedIn Icon"
+          />
+          <SocialLink
+            href="https://ev2070.itch.io/"
+            src={ItchioIcon}
+            alt="Itchio Icon"
+          />
         </div>
       </div>
 
