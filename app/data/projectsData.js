@@ -1,5 +1,4 @@
-// Array of portfolio projects each with their own information
-
+// Array of portfolio projects, each with their own information
 export const ProjectsData = [
   // Websites
   {
