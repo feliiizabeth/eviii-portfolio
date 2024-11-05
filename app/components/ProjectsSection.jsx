@@ -58,14 +58,14 @@ const ProjectsSection = () => {
       {/* Search bar */}
       <div className="flex justify-center mb-6 relative w-full">
         <div className="absolute left-3 top-1/2 transform -translate-y-1/2">
-          <MagnifyingGlassIcon className="h-5 w-5 text-gray-500" />
+          <MagnifyingGlassIcon className="h-5 w-5 text-slate-500" />
         </div>
         <input
           type="text"
           placeholder="Search my projects"
           value={searchQuery}
           onChange={handleSearchChange}
-          className="w-full pl-10 pr-2 p-2 rounded-full bg-[#121212] border-2 border-slate-600 text-sm sm:text-base md:text-lg lg:text-xl focus:ring-2 focus:ring-primary-500 focus:outline-none"
+          className="w-full pl-10 pr-2 p-2 rounded-full bg-[#121212] border-2 border-slate-600 placeholder-[#64748B] text-sm sm:text-base md:text-lg lg:text-xl focus:ring-2 focus:ring-primary-500 focus:outline-none"
         />
       </div>
 
