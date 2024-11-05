@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import GitHubIcon from "../../public/images/github-mark-white.svg";
-import ItchioIcon from "../../public/images/itchio-textless-white.svg";
-import LinkedInIcon from "../../public/images/In-White-96.png";
+import GitHubIcon from "../../public/images/social_logos/github-mark-white.svg";
+import ItchioIcon from "../../public/images/social_logos/itchio-textless-white.svg";
+import LinkedInIcon from "../../public/images/social_logos/In-White-96.png";
 import SocialLink from "./SocialLink";
 
 const EmailSection = () => {
