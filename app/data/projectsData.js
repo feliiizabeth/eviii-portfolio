@@ -49,7 +49,7 @@ export const ProjectsData = [
     previewUrl: "/",
   },
   {
-    title: "Wanted! - Game Clone",
+    title: "Wanted!",
     description:
       'Developed a replication of the "Wanted!" mini-game from Nintendo\'s "New Super Mario Bros.", where players capture the wanted character among many. Showcased engaging gameplay and polished interactivity in a custom-designed DS interface.',
     image: "/images/project_cards/wanted.png",
@@ -60,7 +60,7 @@ export const ProjectsData = [
 
   // Creative Coding
   {
-    title: "Petal Palettes - Interactive Tool",
+    title: "Petal Palettes",
     description:
       "An interactive experience, made with GameMaker Studio 2, where you can explore and create beautiful color palettes inspired by the beauty of nature. RGB and hex codes are displayed for easy reference.",
     image: "/images/project_cards/petal-palettes.png",
@@ -69,7 +69,7 @@ export const ProjectsData = [
     previewUrl: "/",
   },
   {
-    title: "Glass Gleam - Interactive Digital Toy",
+    title: "Glass Gleam",
     description:
       "Glass Gleam is an interactive digital toy built in GameMaker Studio 2. In this experience, you'll take on the simple yet satisfying task of cleaning a pair of glasses.",
     image: "/images/project_cards/glass-gleam-banner.png",
@@ -80,7 +80,7 @@ export const ProjectsData = [
 
   // Graphic Designs
   {
-    title: "sueño - Logo",
+    title: "sueño",
     description:
       "Designed a logo for an imagined brand in Adobe Illustrator, exploring multiple iterations through hand sketches and digital refinements. Developed and refined logo concepts using vector graphics to establish a unique visual identity.",
     image: "/images/project_cards/sueno.png",
@@ -89,7 +89,7 @@ export const ProjectsData = [
     previewUrl: "/",
   },
   {
-    title: "Sunshine Deli - Menu",
+    title: "Sunshine Deli",
     description:
       "Created a detailed deli menu in InDesign and Figma, blending typography, strategic layout, and rich imagery for both print and digital formats. Emphasized clear hierarchy and user experience to create an appealing and functional menu.",
     image: "/images/project_cards/sunshine-deli.png",
@@ -98,7 +98,7 @@ export const ProjectsData = [
     previewUrl: "/",
   },
   {
-    title: "The Bosch Bird - Image Trace",
+    title: "My Bosch Birds",
     description:
       'Reimagined Hieronymous Bosch\'s "The Garden of Earthly Delights" using vector art in Illustrator and advanced image manipulation in Photoshop, focusing on composition and creative techniques.',
     image: "/images/project_cards/the-bosch-bird.png",
@@ -107,7 +107,7 @@ export const ProjectsData = [
     previewUrl: "/",
   },
   {
-    title: "Serene Confections - Graphic Treatment",
+    title: "Serene Confections",
     description:
       "Created a graphic treatment document in InDesign, showcasing personal style through custom colors, typography, and textures, and utilizing grids for layout and visual exploration.",
     image: "/images/project_cards/serene-confections.png",
@@ -116,7 +116,7 @@ export const ProjectsData = [
     previewUrl: "/",
   },
   {
-    title: "We Are the Champions - Text Texture",
+    title: "We Are the Champions",
     description:
       "Explored typography and grid layouts in Adobe InDesign by creating a black-and-white composition using five typefaces and varying text attributes to experiment with texture and alignment.",
     image: "/images/project_cards/we-are-the-champions.png",
