@@ -15,13 +15,15 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, projectUrl }) => {
         <div className="overlay flex items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 group-hover:bg-opacity-80 transition-all duration-500">
           {/* Project icons containter */}
           <div className="flex items-center gap-6 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500">
-            {/* GitHub link icon */}
-            <Link
-              href={gitUrl}
-              className="h-14 w-14 border-2 rounded-full border-[#ADB7BE] hover:border-white flex items-center justify-center"
-            >
-              <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] group-hover:text-white" />
-            </Link>
+            {/* GitHub link icon - shown if project has a GitHub link */}
+            {gitUrl !== "/" && (
+              <Link
+                href={gitUrl}
+                className="h-14 w-14 border-2 rounded-full border-[#ADB7BE] hover:border-white flex items-center justify-center"
+              >
+                <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] group-hover:text-white" />
+              </Link>
+            )}
 
             {/* Preview link icon */}
             <Link

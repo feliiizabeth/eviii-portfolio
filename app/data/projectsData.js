@@ -20,7 +20,7 @@ export const ProjectsData = [
     image: "/images/project_cards/selena.png",
     tag: ["All", "Websites"],
     slug: "selena",
-    gitUrl: "/",
+    gitUrl: "https://github.com/ev2070/selena",
     projectUrl: PROJECTS_PATH + "selena",
   },
   {
@@ -30,7 +30,7 @@ export const ProjectsData = [
     image: "/images/project_cards/woke-olympics.png",
     tag: ["All", "Websites"],
     slug: "woke-olympics",
-    gitUrl: "/",
+    gitUrl: "https://github.com/ev2070/woke-olympics",
     projectUrl: PROJECTS_PATH + "woke-olympics",
   },
 
