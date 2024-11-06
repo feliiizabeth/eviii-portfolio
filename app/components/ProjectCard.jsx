@@ -3,7 +3,7 @@ import Link from "next/link";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 
 // Project card component
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
+const ProjectCard = ({ imgUrl, title, description, gitUrl, projectUrl }) => {
   return (
     <div>
       {/* Project image container */}
@@ -25,7 +25,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
 
             {/* Preview link icon */}
             <Link
-              href={previewUrl}
+              href={projectUrl}
               className="h-14 w-14 border-2 rounded-full border-[#ADB7BE] hover:border-white flex items-center justify-center"
             >
               <EyeIcon className="h-10 w-10 text-[#ADB7BE] cursor-pointer group-hover:text-white" />

@@ -102,7 +102,7 @@ const ProjectsSection = () => {
               imgUrl={project.image}
               tag={project.tag}
               gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
+              projectUrl={project.projectUrl}
             />
           </motion.li>
         ))}
