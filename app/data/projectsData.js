@@ -129,14 +129,4 @@ export const ProjectsData = [
     gitUrl: "/",
     projectUrl: PROJECTS_PATH + "serene-confections",
   },
-  {
-    title: "We Are the Champions",
-    description:
-      "Explored typography and grid layouts in Adobe InDesign by creating a black-and-white composition using five typefaces and varying text attributes to experiment with texture and alignment.",
-    image: "/images/project_cards/we-are-the-champions.png",
-    tag: ["All", "Graphic Designs"],
-    slug: "we-are-the-champions",
-    gitUrl: "/",
-    projectUrl: PROJECTS_PATH + "we-are-the-champions",
-  },
 ];
