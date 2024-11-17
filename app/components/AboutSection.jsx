@@ -33,7 +33,7 @@ const AboutSection = () => {
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
 
           {/* About Me description */}
-          <p className="text-base lg:text-lg">
+          <p className="text-base lg:text-lg text-[#ADB7BE]">
             Hi, there! I'm a recent graduate of NYU Tandon with a degree in
             Computer Science and a minor in Integrated Design & Media. My
             passion for technology started early, despite having limited access
