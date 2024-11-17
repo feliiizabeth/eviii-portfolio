@@ -12,6 +12,7 @@ export const ProjectsData = [
     slug: "climate-change",
     gitUrl: "/",
     projectUrl: PROJECTS_PATH + "climate-change",
+    liveUrl: "https://ev2070.github.io/climate-change/",
   },
   {
     title: "Selena",
@@ -22,6 +23,7 @@ export const ProjectsData = [
     slug: "selena",
     gitUrl: "https://github.com/ev2070/selena",
     projectUrl: PROJECTS_PATH + "selena",
+    liveUrl: "https://ev2070.github.io/selena/",
   },
   {
     title: "Woke Olympics",
@@ -32,6 +34,7 @@ export const ProjectsData = [
     slug: "woke-olympics",
     gitUrl: "https://github.com/ev2070/woke-olympics",
     projectUrl: PROJECTS_PATH + "woke-olympics",
+    liveUrl: "https://ev2070.github.io/woke-olympics/",
   },
 
   // Games
@@ -44,6 +47,7 @@ export const ProjectsData = [
     slug: "zorrotron-1919",
     gitUrl: "https://github.com/ev2070/Zorrotron-1919",
     projectUrl: PROJECTS_PATH + "zorrotron-1919",
+    liveUrl: "https://ev2070.itch.io/zorrotron-1919",
   },
   {
     title: "Nutcase for Acorns",
@@ -54,6 +58,7 @@ export const ProjectsData = [
     slug: "nutcase-for-acorns",
     gitUrl: "https://github.com/ev2070/NutcaseForAcorns",
     projectUrl: PROJECTS_PATH + "nutcase-for-acorns",
+    liveUrl: "https://ev2070.itch.io/nutcase-for-acorns",
   },
   {
     title: "Wanted!",
@@ -64,6 +69,7 @@ export const ProjectsData = [
     slug: "wanted",
     gitUrl: "/",
     projectUrl: PROJECTS_PATH + "wanted",
+    liveUrl: "https://editor.p5js.org/ev2070/full/u2hvdGbwo",
   },
 
   // Creative Coding
@@ -76,6 +82,7 @@ export const ProjectsData = [
     slug: "petal-palettes",
     gitUrl: "https://github.com/ev2070/PetalPalettes",
     projectUrl: PROJECTS_PATH + "petal-palettes",
+    liveUrl: "https://ev2070.itch.io/petal-palettes",
   },
   {
     title: "Glass Gleam",
@@ -86,6 +93,7 @@ export const ProjectsData = [
     slug: "glass-gleam",
     gitUrl: "https://github.com/ev2070/GlassGleam",
     projectUrl: PROJECTS_PATH + "glass-gleam",
+    liveUrl: "https://ev2070.itch.io/glass-gleam",
   },
 
   // Graphic Designs
@@ -98,6 +106,7 @@ export const ProjectsData = [
     slug: "sueno",
     gitUrl: "/",
     projectUrl: PROJECTS_PATH + "sueno",
+    liveUrl: "/",
   },
   {
     title: "Sunshine Deli",
@@ -108,6 +117,7 @@ export const ProjectsData = [
     slug: "sunshine-deli",
     gitUrl: "/",
     projectUrl: PROJECTS_PATH + "sunshine-deli",
+    liveUrl: "/",
   },
   {
     title: "My Bosch Birds",
@@ -118,6 +128,7 @@ export const ProjectsData = [
     slug: "my-bosch-birds",
     gitUrl: "/",
     projectUrl: PROJECTS_PATH + "my-bosch-birds",
+    liveUrl: "/",
   },
   {
     title: "Serene Confections",
@@ -128,5 +139,6 @@ export const ProjectsData = [
     slug: "serene-confections",
     gitUrl: "/",
     projectUrl: PROJECTS_PATH + "serene-confections",
+    liveUrl: "/",
   },
 ];
