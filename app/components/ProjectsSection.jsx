@@ -1,9 +1,7 @@
 "use client";
-import React, { useEffect, useMemo, useRef, useState } from "react";
-import { motion, useInView } from "framer-motion";
+import React, { useEffect, useMemo, useState } from "react";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 
-import ProjectCard from "./ProjectCard";
 import ProjectCardList from "./ProjectCardList";
 import ProjectTag from "./ProjectTag";
 import { fetchProjectsData } from "../../utils/fetchProjectsData";
@@ -23,8 +21,6 @@ const ProjectsSection = () => {
   const [projectsData, setProjectsData] = useState([]); // For projects' data
   const [tag, setTag] = useState("All"); // For selected tag
   const [searchQuery, setSearchQuery] = useState(""); // For search input
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true }); // For motion.li
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -58,12 +54,6 @@ const ProjectsSection = () => {
       return isTagMatched && isSearchMatched;
     });
   }, [projectsData, tag, searchQuery]);
-
-  // ProjectCard has two variants
-  const cardVariants = {
-    initial: { y: 50, opacity: 0 },
-    animate: { y: 0, opacity: 1 },
-  };
 
   return (
     <section id="projects" className="pt-22 sm:pt-23 lg:pt-25">
