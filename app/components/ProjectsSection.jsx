@@ -1,11 +1,12 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 
 import ProjectCard from "./ProjectCard";
+import ProjectCardList from "./ProjectCardList";
 import ProjectTag from "./ProjectTag";
-import { ProjectsData } from "../data/projectsData";
+import { fetchProjectsData } from "../../utils/fetchProjectsData";
 
 // Project tags
 const tags = [
@@ -19,10 +20,23 @@ const tags = [
 ];
 
 const ProjectsSection = () => {
+  const [projectsData, setProjectsData] = useState([]); // For projects' data
   const [tag, setTag] = useState("All"); // For selected tag
   const [searchQuery, setSearchQuery] = useState(""); // For search input
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true }); // For motion.li
+
+  useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        const data = await fetchProjectsData();
+        setProjectsData(data);
+      } catch (e) {
+        console.error("Failed to fetch projects' data:", e);
+      }
+    };
+    fetchProjects();
+  }, []);
 
   // Function that changes tags
   const handleTagChange = (newTag) => {
@@ -34,14 +48,16 @@ const ProjectsSection = () => {
     setSearchQuery(event.target.value);
   };
 
-  // Function that filters projects based on selected tag
-  const filteredProjects = ProjectsData.filter((project) => {
-    const isTagMatched = tag === "All" || project.tag.includes(tag);
-    const isSearchMatched = project.title
-      .toLowerCase()
-      .includes(searchQuery.toLowerCase());
-    return isTagMatched && isSearchMatched;
-  });
+  // Function that filters projects based on selected tag or search query
+  const filteredProjects = useMemo(() => {
+    return projectsData.filter((project) => {
+      const isTagMatched = tag === "All" || project.tag.includes(tag);
+      const isSearchMatched = project.title
+        .toLowerCase()
+        .includes(searchQuery.toLowerCase());
+      return isTagMatched && isSearchMatched;
+    });
+  }, [projectsData, tag, searchQuery]);
 
   // ProjectCard has two variants
   const cardVariants = {
@@ -82,31 +98,7 @@ const ProjectsSection = () => {
       </div>
 
       {/* Display projects corresponding to selected tag and search query */}
-      <ul
-        ref={ref}
-        className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 md:gap-12"
-      >
-        {filteredProjects.map((project, index) => (
-          // Animated ProjectCard
-          <motion.li
-            key={index}
-            variants={cardVariants}
-            initial="initial"
-            animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.3, delay: index * 0.4 }}
-          >
-            <ProjectCard
-              key={project.title}
-              title={project.title}
-              description={project.description}
-              imgUrl={project.image}
-              tag={project.tag}
-              gitUrl={project.gitUrl}
-              projectUrl={project.projectUrl}
-            />
-          </motion.li>
-        ))}
-      </ul>
+      <ProjectCardList projects={filteredProjects} />
     </section>
   );
 };

@@ -1,0 +1,125 @@
+{
+  "_comment": "Portfolio Projects and corresponding properties",
+  "ProjectsData": [
+    {
+      "title": "Climate Change!",
+      "description": "",
+      "image": "/images/project_cards/climate-change.png",
+      "tag": ["All", "Websites"],
+      "slug": "climate-change",
+      "gitUrl": "/",
+      "projectUrl": "/projects/climate-change",
+      "liveUrl": "https://ev2070.github.io/climate-change/"
+    },
+    {
+      "title": "Selena",
+      "description": "",
+      "image": "/images/project_cards/selena.png",
+      "tag": ["All", "Websites"],
+      "slug": "selena",
+      "gitUrl": "https://github.com/ev2070/selena",
+      "projectUrl": "/projects/selena",
+      "liveUrl": "https://ev2070.github.io/selena/"
+    },
+    {
+      "title": "Woke Olympics",
+      "description": "",
+      "image": "/images/project_cards/woke-olympics.png",
+      "tag": ["All", "Websites"],
+      "slug": "woke-olympics",
+      "gitUrl": "https://github.com/ev2070/woke-olympics",
+      "projectUrl": "/projects/woke-olympics",
+      "liveUrl": "https://ev2070.github.io/woke-olympics/"
+    },
+    {
+      "title": "Zorrotron: 1919",
+      "description": "",
+      "image": "/images/project_cards/zorrotron-1919-banner.png",
+      "tag": ["All", "Games"],
+      "slug": "zorrotron-1919",
+      "gitUrl": "https://github.com/ev2070/Zorrotron-1919",
+      "projectUrl": "/projects/zorrotron-1919",
+      "liveUrl": "https://ev2070.itch.io/zorrotron-1919"
+    },
+    {
+      "title": "Nutcase for Acorns",
+      "description": "",
+      "image": "/images/project_cards/nutcase-for-acorns-banner.png",
+      "tag": ["All", "Games"],
+      "slug": "nutcase-for-acorns",
+      "gitUrl": "https://github.com/ev2070/NutcaseForAcorns",
+      "projectUrl": "projects/nutcase-for-acorns",
+      "liveUrl": "https://ev2070.itch.io/nutcase-for-acorns"
+    },
+    {
+      "title": "Wanted!",
+      "description": "",
+      "image": "/images/project_cards/wanted.png",
+      "tag": ["All", "Games", "Creative Coding"],
+      "slug": "wanted",
+      "gitUrl": "/",
+      "projectUrl": "/projects/wanted",
+      "liveUrl": "https://editor.p5js.org/ev2070/full/u2hvdGbwo"
+    },
+    {
+      "title": "Petal Palettes",
+      "description": "",
+      "image": "/images/project_cards/petal-palettes.png",
+      "tag": ["All", "Creative Coding"],
+      "slug": "petal-palettes",
+      "gitUrl": "https://github.com/ev2070/PetalPalettes",
+      "projectUrl": "/projects/petal-palettes",
+      "liveUrl": "https://ev2070.itch.io/petal-palettes"
+    },
+    {
+      "title": "Glass Gleam",
+      "description": "",
+      "image": "/images/project_cards/glass-gleam-banner.png",
+      "tag": ["All", "Creative Coding"],
+      "slug": "glass-gleam",
+      "gitUrl": "https://github.com/ev2070/GlassGleam",
+      "projectUrl": "/projects/glass-gleam",
+      "liveUrl": "https://ev2070.itch.io/glass-gleam"
+    },
+    {
+      "title": "sueño",
+      "description": "",
+      "image": "/images/project_cards/sueno.png",
+      "tag": ["All", "Graphic Designs"],
+      "slug": "sueno",
+      "gitUrl": "/",
+      "projectUrl": "/projects/sueno",
+      "liveUrl": "/"
+    },
+    {
+      "title": "Sunshine Deli",
+      "description": "",
+      "image": "/images/project_cards/sunshine-deli.png",
+      "tag": ["All", "Graphic Designs"],
+      "slug": "sunshine-deli",
+      "gitUrl": "/",
+      "projectUrl": "/projects/sunshine-deli",
+      "liveUrl": "/"
+    },
+    {
+      "title": "My Bosch Birds",
+      "description": "",
+      "image": "/images/project_cards/the-bosch-bird.png",
+      "tag": ["All", "Graphic Designs"],
+      "slug": "my-bosch-birds",
+      "gitUrl": "/",
+      "projectUrl": "/projects/my-bosch-birds",
+      "liveUrl": "/"
+    },
+    {
+      "title": "Serene Confections",
+      "description": "",
+      "image": "/images/project_cards/serene-confections.png",
+      "tag": ["All", "Graphic Designs"],
+      "slug": "serene-confections",
+      "gitUrl": "/",
+      "projectUrl": "/projects/serene-confections",
+      "liveUrl": "/"
+    }
+  ]
+}
