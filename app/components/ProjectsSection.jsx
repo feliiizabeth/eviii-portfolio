@@ -2,9 +2,9 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 
+import { fetchProjectsData } from "@/utils/fetchProjectsData";
 import ProjectCardList from "./ProjectCardList";
 import ProjectTag from "./ProjectTag";
-import { fetchProjectsData } from "../../utils/fetchProjectsData";
 
 // Project tags
 const tags = [
