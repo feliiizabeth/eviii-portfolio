@@ -45,7 +45,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - The API endpoint to send an email was built while referencing [Send Email With NextJS Using Gmail, Resend or AWS](https://youtu.be/oujAYWgYwtM?si=7-cLRc7CA7a1hlzW), a YouTube tutorial by [ZinoTrust Academy](https://www.youtube.com/@ZinoTrustAcademy).
 - Images that I do not own are credited in the [image-credits.md](./public/image-credits.md) file.
 
-Please refrain from using, reproducing, or distributing all other content from this site without express written permission. For permission requests, you can contact eviii.professional@gmail.com.
+Please refrain from using, reproducing, or distributing all other content from this site without express written permission. For permission requests, you can contact feliiizabeth@gmail.com.
 
 ---
 
