@@ -1,11 +1,14 @@
 "use client";
-import React, { useTransition, useState } from "react";
+import React, { useEffect, useState, useTransition } from "react";
 import Image from "next/image";
 
-import { TabsData } from "../data/tabsData";
+import { fetchTabsData } from "@/utils/fetchTabsData";
+import Education from "./Education";
+import SkillsList from "./SkillsList";
 import TabButton from "./TabButton";
 
 const AboutSection = () => {
+  const [tabsData, setTabsData] = useState([]); // For section tabs' data
   const [tab, setTab] = useState("skills"); // For selected tab
   const [isPending, startTransition] = useTransition(); // For tab changes
 
@@ -15,6 +18,20 @@ const AboutSection = () => {
       setTab(id);
     });
   };
+
+  useEffect(() => {
+    const fetchTabs = async () => {
+      try {
+        const data = await fetchTabsData();
+        setTabsData(data);
+      } catch (e) {
+        console.error("Failed to fetch tabs' data:", e);
+      }
+    };
+    fetchTabs();
+  }, []);
+
+  const currentTab = tabsData.find((t) => t.id === tab);
 
   return (
     <section id="about" className="text-white">
@@ -83,7 +100,11 @@ const AboutSection = () => {
 
           {/* Display tab content appropriately */}
           <div className="mt-8 flex flex-wrap gap-4">
-            {TabsData.find((t) => t.id === tab).content}
+            {currentTab && currentTab.id === "skills" ? (
+              <SkillsList skills={currentTab.content} />
+            ) : currentTab && currentTab.id === "education" ? (
+              <Education edu={currentTab.content} />
+            ) : null}
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ const SkillsList = ({ skills }) => {
   return (
     <div className="flex flex-wrap gap-4">
       {skills.map((skill) => (
-        <Skill name={skill} />
+        <Skill key={skill} name={skill} />
       ))}
     </div>
   );
