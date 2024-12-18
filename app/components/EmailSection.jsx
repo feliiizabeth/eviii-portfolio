@@ -6,10 +6,16 @@ import LinkedInIcon from "../../public/images/social_logos/In-White-96.png";
 import SocialLink from "./SocialLink";
 
 const EmailSection = () => {
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const [emailSubmitted, setEmailSubmitted] = useState(false); // for email submission
+  const [isSending, setIsSending] = useState(false); // for loading state
+  const [errorMessage, setErrorMessage] = useState(""); // for error handling
 
   const handleSubmit = async (e) => {
     e.preventDefault(); // prevent refresh
+    setIsSending(true);
+    setErrorMessage(""); // reset
+    setEmailSubmitted(false); // reset
+
     // Data extracted from form
     const data = {
       email: e.target.email.value,
@@ -30,14 +36,29 @@ const EmailSection = () => {
       body: JSONdata,
     };
 
-    // Send POST request to API endpoint
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
+    try {
+      // Send POST request to API endpoint
+      const response = await fetch(endpoint, options);
+      const resData = await response.json();
 
-    if (response.ok) {
-      setEmailSubmitted(true);
-    } else {
-      console.error("Failed to send message:", resData);
+      if (response.ok) {
+        setEmailSubmitted(true);
+        e.target.reset(); // Clear form upon submission
+        // Clear success message after 3 seconds
+        setTimeout(() => {
+          setEmailSubmitted(false);
+        }, 3000);
+      } else {
+        throw new Error(resData.error || "Failed to send email message");
+      }
+    } catch (e) {
+      setErrorMessage(e.message);
+      // Clear error message after 3 seconds
+      setTimeout(() => {
+        setErrorMessage("");
+      }, 3000);
+    } finally {
+      setIsSending(false); // reset
     }
   };
 
@@ -131,16 +152,24 @@ const EmailSection = () => {
           {/* Submit button */}
           <button
             type="submit"
-            className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+            className={`bg-primary-500 text-white font-medium py-2.5 px-5 rounded-lg w-full transition duration-300 ease-in-out ${
+              isSending
+                ? "opacity-50 cursor-not-allowed"
+                : "hover:bg-primary-600 transform hover:scale-105"
+            }`}
+            disabled={isSending}
           >
-            Send Message
+            {isSending ? "Sending..." : "Send Message"}
           </button>
 
-          {/* Success message */}
+          {/* Success or error messages */}
           {emailSubmitted && (
             <p className="text-green-500 text-sm mt-2">
               Email sent successfully!
             </p>
+          )}
+          {errorMessage && (
+            <p className="text-red-500 text-sm mt-2">{errorMessage}</p>
           )}
         </form>
       </div>
