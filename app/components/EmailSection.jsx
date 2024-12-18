@@ -81,7 +81,7 @@ const EmailSection = () => {
         </p>
         <div className="socials flex flex-row gap-2">
           <SocialLink
-            href="https://github.com/ev2070"
+            href="https://github.com/feliiizabeth"
             src={GitHubIcon}
             alt="GitHub Icon"
           />
@@ -91,7 +91,7 @@ const EmailSection = () => {
             alt="LinkedIn Icon"
           />
           <SocialLink
-            href="https://ev2070.itch.io/"
+            href="https://feliiizabeth.itch.io"
             src={ItchioIcon}
             alt="Itchio Icon"
           />

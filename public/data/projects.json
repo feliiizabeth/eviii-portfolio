@@ -9,7 +9,7 @@
       "slug": "climate-change",
       "gitUrl": "/",
       "projectUrl": "/projects/climate-change",
-      "liveUrl": "https://ev2070.github.io/climate-change/"
+      "liveUrl": "https://feliiizabeth.github.io/climate-change/"
     },
     {
       "title": "Selena",
@@ -17,9 +17,9 @@
       "image": "/images/project_cards/selena.png",
       "tag": ["All", "Websites"],
       "slug": "selena",
-      "gitUrl": "https://github.com/ev2070/selena",
+      "gitUrl": "https://github.com/feliiizabeth/selena",
       "projectUrl": "/projects/selena",
-      "liveUrl": "https://ev2070.github.io/selena/"
+      "liveUrl": "https://feliiizabeth.github.io/selena/"
     },
     {
       "title": "Woke Olympics",
@@ -27,9 +27,9 @@
       "image": "/images/project_cards/woke-olympics.png",
       "tag": ["All", "Websites"],
       "slug": "woke-olympics",
-      "gitUrl": "https://github.com/ev2070/woke-olympics",
+      "gitUrl": "https://github.com/feliiizabeth/woke-olympics",
       "projectUrl": "/projects/woke-olympics",
-      "liveUrl": "https://ev2070.github.io/woke-olympics/"
+      "liveUrl": "https://feliiizabeth.github.io/woke-olympics/"
     },
     {
       "title": "Zorrotron: 1919",
@@ -37,9 +37,9 @@
       "image": "/images/project_cards/zorrotron-1919-banner.png",
       "tag": ["All", "Games"],
       "slug": "zorrotron-1919",
-      "gitUrl": "https://github.com/ev2070/Zorrotron-1919",
+      "gitUrl": "https://github.com/feliiizabeth/Zorrotron-1919",
       "projectUrl": "/projects/zorrotron-1919",
-      "liveUrl": "https://ev2070.itch.io/zorrotron-1919"
+      "liveUrl": "https://feliiizabeth.itch.io/zorrotron-1919"
     },
     {
       "title": "Nutcase for Acorns",
@@ -47,9 +47,9 @@
       "image": "/images/project_cards/nutcase-for-acorns-banner.png",
       "tag": ["All", "Games"],
       "slug": "nutcase-for-acorns",
-      "gitUrl": "https://github.com/ev2070/NutcaseForAcorns",
+      "gitUrl": "https://github.com/feliiizabeth/NutcaseForAcorns",
       "projectUrl": "projects/nutcase-for-acorns",
-      "liveUrl": "https://ev2070.itch.io/nutcase-for-acorns"
+      "liveUrl": "https://feliiizabeth.itch.io/nutcase-for-acorns"
     },
     {
       "title": "Wanted!",
@@ -59,7 +59,7 @@
       "slug": "wanted",
       "gitUrl": "/",
       "projectUrl": "/projects/wanted",
-      "liveUrl": "https://editor.p5js.org/ev2070/full/u2hvdGbwo"
+      "liveUrl": "https://editor.p5js.org/feliiizabeth/full/u2hvdGbwo"
     },
     {
       "title": "Petal Palettes",
@@ -67,9 +67,9 @@
       "image": "/images/project_cards/petal-palettes.png",
       "tag": ["All", "Creative Coding"],
       "slug": "petal-palettes",
-      "gitUrl": "https://github.com/ev2070/PetalPalettes",
+      "gitUrl": "https://github.com/feliiizabeth/PetalPalettes",
       "projectUrl": "/projects/petal-palettes",
-      "liveUrl": "https://ev2070.itch.io/petal-palettes"
+      "liveUrl": "https://feliiizabeth.itch.io/petal-palettes"
     },
     {
       "title": "Glass Gleam",
@@ -77,9 +77,9 @@
       "image": "/images/project_cards/glass-gleam-banner.png",
       "tag": ["All", "Creative Coding"],
       "slug": "glass-gleam",
-      "gitUrl": "https://github.com/ev2070/GlassGleam",
+      "gitUrl": "https://github.com/feliiizabeth/GlassGleam",
       "projectUrl": "/projects/glass-gleam",
-      "liveUrl": "https://ev2070.itch.io/glass-gleam"
+      "liveUrl": "https://feliiizabeth.itch.io/glass-gleam"
     },
     {
       "title": "sueño",
