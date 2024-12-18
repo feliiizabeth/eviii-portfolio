@@ -8,6 +8,10 @@ import MenuOverlay from "./MenuOverlay";
 
 const navLinks = [
   {
+    title: "Home",
+    path: "/",
+  },
+  {
     title: "About",
     path: "/#about",
   },
@@ -32,7 +36,7 @@ const NavBar = () => {
           href={"/"}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          LOGO
+          EVIII
         </Link>
 
         {/* Button for opening/closing mobile nav menu */}
