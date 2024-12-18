@@ -70,7 +70,7 @@ const ProjectPage = ({ project, allProjects }) => {
         <p className="text-base lg:text-lg text-[#ADB7BE]">
           {project.description}
         </p>
-        <div className="project-links mt-6 mb-4 text-center md:text-left">
+        <div className="mt-6 mb-4 text-center md:text-left">
           {project.projectUrl !== "/" && (
             <button className="px-6 py-3 w-72 sm:w-fit rounded-full sm:mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white transition duration-300 ease-in-out transform hover:scale-105">
               <Link href={project.liveUrl}>View Live Project</Link>

@@ -78,10 +78,10 @@ export const LandingSection = () => {
 
           {/* Buttons container */}
           <div>
-            <button className="px-6 py-3 w-72 sm:w-fit rounded-full sm:mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white">
+            <button className="px-6 py-3 w-72 sm:w-fit rounded-full sm:mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white transition duration-300 ease-in-out transform hover:scale-105">
               Hire Me
             </button>
-            <button className="px-1 py-1 w-72 sm:w-fit rounded-full bg-gradient-to-br from-primary-500 via-purple-500 to-secondary-500 hover:bg-slate-800 text-white mt-3">
+            <button className="px-1 py-1 w-72 sm:w-fit rounded-full bg-gradient-to-br from-primary-500 via-purple-500 to-secondary-500 hover:bg-slate-800 text-white mt-3 transition duration-300 ease-in-out transform hover:scale-105">
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download DV
               </span>
