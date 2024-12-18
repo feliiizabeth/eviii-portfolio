@@ -43,6 +43,7 @@ const AboutSection = () => {
             className="rounded-t-[96px] rounded-b-[96px]"
             width={512}
             height={1024}
+            loading="lazy"
           />
         </div>
 
