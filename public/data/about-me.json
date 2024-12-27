@@ -1,0 +1,40 @@
+{
+  "_comment": "Data for \"About Me\" Section: description and tabs information",
+  
+  "Description": [
+    "Hi, there! I'm a recent graduate of NYU Tandon with a degree in Computer Science and a minor in Integrated Design & Media. My passion for technology started early, despite having limited access to it growing up. That all changed when I joined a Software Engineering Program in high school, where I discovered the thrill of turning ideas into functional and creative projects. From that moment, I knew I wanted a career that combines technical skills with creative expression.",
+    "In my portfolio, you'll find a variety of projects—websites, graphic designs, games, and more. I love bringing a fresh, artistic perspective to my work and exploring different programming languages and tools. My approach is rooted in clear communication, collaboration, and breaking tasks down into manageable chunks, all while following industry best practices.",
+    "As a first-generation Mexican-American from Brooklyn, I'm proud of my humble beginnings and bring that determination into every project. Beyond coding and design, I’m an avid artist, often blending my love for drawing with my technical work.",
+    "I'm eager to explore new opportunities in the tech world and always open to collaborations that push me to grow. If my story resonates with you, let’s connect and create something amazing together!"
+  ],
+
+  "TabsData": [
+    {
+      "title": "Skills",
+      "id": "skills",
+      "content": [
+        "Python",
+        "Javascript",
+        "Java",
+        "C",
+        "C++",
+        "HTML",
+        "CSS",
+        "jQuery",
+        "Bootstrap",
+        "React",
+        "SQL",
+        "Game Maker Language"
+      ]
+    },
+    {
+      "title": "Education",
+      "id": "education",
+      "content": {
+        "school": "New York University Tandon School of Engineering",
+        "location": "Brooklyn, NY",
+        "degree": "Bachelor of Science, Major in Computer Science, Minor in Integrated Design & Media"
+      }
+    }
+  ]
+}
