@@ -79,7 +79,7 @@ const EmailSection = () => {
           excited to explore new opportunities and share ideas. I look forward
           to hearing from you!
         </p>
-        <div className="socials flex flex-row gap-2">
+        <div className="socials flex flex-row gap-2 mb-4 md:mb-0">
           <SocialLink
             href="https://github.com/feliiizabeth"
             src={GitHubIcon}

@@ -62,7 +62,7 @@ const AboutSection = () => {
           </div>
 
           {/* Switchable tab buttons */}
-          <div className="flex flex-row justify-start mt-8">
+          <div className="flex flex-row justify-start mt-4">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}

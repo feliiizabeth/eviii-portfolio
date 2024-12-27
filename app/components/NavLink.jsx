@@ -17,7 +17,7 @@ const NavLink = ({ href, title, onClick }) => {
         e.preventDefault();
         window.scrollTo({ top: 0, behavior: "smooth" });
       } else if (isHashLink && targetSectionId) {
-        // Scroll to target by ID
+        // Scroll to target section by ID
         e.preventDefault();
         const section = document.getElementById(targetSectionId);
         if (section) {

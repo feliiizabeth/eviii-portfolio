@@ -8,6 +8,12 @@ export const LandingSection = () => {
   const [isAnimating, setIsAnimating] = useState(false); // For Type Animation
   const textContainerRef = useRef(null); // <h1> that contains the typing animation
 
+  const handleHireMeClick = () => {
+    // Scroll to Email Section
+    const emailSection = document.getElementById("contact");
+    emailSection.scrollIntoView({ behavior: "smooth" });
+  };
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -78,7 +84,10 @@ export const LandingSection = () => {
 
           {/* Buttons container */}
           <div>
-            <button className="px-6 py-3 w-72 sm:w-fit rounded-full sm:mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white transition duration-300 ease-in-out transform hover:scale-105">
+            <button
+              className="px-6 py-3 w-72 sm:w-fit rounded-full sm:mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white transition duration-300 ease-in-out transform hover:scale-105"
+              onClick={handleHireMeClick}
+            >
               Hire Me
             </button>
             <button className="px-1 py-1 w-72 sm:w-fit rounded-full bg-gradient-to-br from-primary-500 via-purple-500 to-secondary-500 hover:bg-slate-800 text-white mt-3 transition duration-300 ease-in-out transform hover:scale-105">
