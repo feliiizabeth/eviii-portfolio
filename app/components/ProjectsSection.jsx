@@ -71,7 +71,7 @@ const ProjectsSection = () => {
           placeholder="Search my projects"
           value={searchQuery}
           onChange={handleSearchChange}
-          className="w-full pl-10 pr-2 p-2 rounded-full bg-[#121212] border-2 border-slate-600 placeholder-[#64748B] text-sm sm:text-base md:text-lg lg:text-xl focus:ring-2 focus:ring-primary-500 focus:outline-none"
+          className="w-full pl-10 pr-2 p-2 rounded-full bg-[#121212] border-2 border-slate-600 placeholder-[#64748B] text-sm sm:text-base md:text-lg lg:text-xl focus:border-primary-500 focus:outline-none"
         />
       </div>
 
