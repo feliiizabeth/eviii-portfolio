@@ -34,7 +34,7 @@ const NavBar = () => {
         {/* Logo link */}
         <Link
           href={"/"}
-          className="text-2xl md:text-5xl text-white font-semibold"
+          className="text-2xl md:text-5xl text-white font-semibold hover:text-primary-500 transition-colors duration-300"
         >
           EVIII
         </Link>

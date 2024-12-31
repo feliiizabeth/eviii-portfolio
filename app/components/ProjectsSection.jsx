@@ -9,12 +9,11 @@ import ProjectTag from "./ProjectTag";
 // Project tags
 const tags = [
   "All",
-  "Websites",
-  "Games",
   "Creative Coding",
-  "Graphic Designs",
-  "Research",
   "Full Stack Development",
+  "Games",
+  "Graphic Designs",
+  "Websites",
 ];
 
 const ProjectsSection = () => {
